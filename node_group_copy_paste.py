@@ -133,7 +133,7 @@ class NODE_PT_group_copy_paste(bpy.types.Panel):
         col.operator("node.remember_group_data", icon='COPY_ID', text="Remember Inputs")
 
         row = col.row(align=True)
-        row.operator("node.apply_group_data", icon='PASTE_ID', text="Apply Inputs")
+        row.operator("node.apply_group_data", icon='PASTEDOWN', text="Apply Inputs")
 
         # Disable Apply button if no data is remembered for this tree type
         if not storage:
